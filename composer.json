@@ -1,6 +1,6 @@
 {
     "name": "jimchen/aliyun-php-sdk-vod",
-    "description": "aliyun vod php sdk",
+    "description": "aliyun php sdk vod",
     "type": "library",
     "license": "Apache-2.0",
     "authors": [

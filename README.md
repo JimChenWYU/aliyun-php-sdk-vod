@@ -1,6 +1,12 @@
 # aliyun-php-sdk-vod
 
-aliyun vod php sdk
+阿里云短视频SDK
+
+fork by [here](https://github.com/aliyun/aliyun-openapi-php-sdk/tree/master/aliyun-php-sdk-vod)
+
+## Requirements
+
+- PHP 5.3+
 
 ## Installing
 

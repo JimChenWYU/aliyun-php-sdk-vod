@@ -1,4 +1,4 @@
-# imchen/aliyun-php-sdk-vod
+# aliyun-php-sdk-vod
 
 aliyun vod php sdk
 

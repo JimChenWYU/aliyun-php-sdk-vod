@@ -11,7 +11,7 @@ fork by [here](https://github.com/aliyun/aliyun-openapi-php-sdk/tree/master/aliy
 ## Installing
 
 ```shell
-$ composer require /imchen/aliyun-php-sdk-vod -vvv
+$ composer require /imchen/aliyun-php-sdk-vod:~1.0
 ```
 
 ## Usage

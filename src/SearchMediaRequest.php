@@ -1,142 +1,201 @@
 <?php
-/*
- * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements.  See the NOTICE file
- * distributed with this work for additional information
- * regarding copyright ownership.  The ASF licenses this file
- * to you under the Apache License, Version 2.0 (the
- * "License"); you may not use this file except in compliance
- * with the License.  You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing,
- * software distributed under the License is distributed on an
- * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
- * KIND, either express or implied.  See the License for the
- * specific language governing permissions and limitations
- * under the License.
- */
+
 namespace JimChen\AliyunVod;
 
 use JimChen\AliyunCore\RpcAcsRequest;
 
+/**
+ * @deprecated Please use https://github.com/aliyun/openapi-sdk-php
+ *
+ * Request of SearchMedia
+ *
+ * @method string getResourceOwnerId()
+ * @method string getResourceOwnerAccount()
+ * @method string getMatch()
+ * @method string getSessionId()
+ * @method string getOwnerId()
+ * @method string getScrollToken()
+ * @method string getPageNo()
+ * @method string getSearchType()
+ * @method string getPageSize()
+ * @method string getSortBy()
+ * @method string getResultTypes()
+ * @method string getFields()
+ */
 class SearchMediaRequest extends RpcAcsRequest
 {
-	function  __construct()
-	{
-		parent::__construct("vod", "2017-03-21", "SearchMedia", "vod", "openAPI");
-		$this->setMethod("POST");
-	}
 
-	private  $resourceOwnerId;
+    /**
+     * @var string
+     */
+    protected $method = 'POST';
 
-	private  $resourceOwnerAccount;
+    /**
+     * Class constructor.
+     */
+    public function __construct()
+    {
+        parent::__construct(
+            'vod',
+            '2017-03-21',
+            'SearchMedia',
+            'vod'
+        );
+    }
 
-	private  $pageNo;
+    /**
+     * @param string $resourceOwnerId
+     *
+     * @return $this
+     */
+    public function setResourceOwnerId($resourceOwnerId)
+    {
+        $this->requestParameters['ResourceOwnerId'] = $resourceOwnerId;
+        $this->queryParameters['ResourceOwnerId'] = $resourceOwnerId;
 
-	private  $searchType;
+        return $this;
+    }
 
-	private  $match;
+    /**
+     * @param string $resourceOwnerAccount
+     *
+     * @return $this
+     */
+    public function setResourceOwnerAccount($resourceOwnerAccount)
+    {
+        $this->requestParameters['ResourceOwnerAccount'] = $resourceOwnerAccount;
+        $this->queryParameters['ResourceOwnerAccount'] = $resourceOwnerAccount;
 
-	private  $pageSize;
+        return $this;
+    }
 
-	private  $sortBy;
+    /**
+     * @param string $match
+     *
+     * @return $this
+     */
+    public function setMatch($match)
+    {
+        $this->requestParameters['Match'] = $match;
+        $this->queryParameters['Match'] = $match;
 
-	private  $ownerId;
+        return $this;
+    }
 
-	private  $fields;
+    /**
+     * @param string $sessionId
+     *
+     * @return $this
+     */
+    public function setSessionId($sessionId)
+    {
+        $this->requestParameters['SessionId'] = $sessionId;
+        $this->queryParameters['SessionId'] = $sessionId;
 
-	private  $scrollToken;
+        return $this;
+    }
 
-	public function getResourceOwnerId() {
-		return $this->resourceOwnerId;
-	}
+    /**
+     * @param string $ownerId
+     *
+     * @return $this
+     */
+    public function setOwnerId($ownerId)
+    {
+        $this->requestParameters['OwnerId'] = $ownerId;
+        $this->queryParameters['OwnerId'] = $ownerId;
 
-	public function setResourceOwnerId($resourceOwnerId) {
-		$this->resourceOwnerId = $resourceOwnerId;
-		$this->queryParameters["ResourceOwnerId"]=$resourceOwnerId;
-	}
+        return $this;
+    }
 
-	public function getResourceOwnerAccount() {
-		return $this->resourceOwnerAccount;
-	}
+    /**
+     * @param string $scrollToken
+     *
+     * @return $this
+     */
+    public function setScrollToken($scrollToken)
+    {
+        $this->requestParameters['ScrollToken'] = $scrollToken;
+        $this->queryParameters['ScrollToken'] = $scrollToken;
 
-	public function setResourceOwnerAccount($resourceOwnerAccount) {
-		$this->resourceOwnerAccount = $resourceOwnerAccount;
-		$this->queryParameters["ResourceOwnerAccount"]=$resourceOwnerAccount;
-	}
+        return $this;
+    }
 
-	public function getPageNo() {
-		return $this->pageNo;
-	}
+    /**
+     * @param string $pageNo
+     *
+     * @return $this
+     */
+    public function setPageNo($pageNo)
+    {
+        $this->requestParameters['PageNo'] = $pageNo;
+        $this->queryParameters['PageNo'] = $pageNo;
 
-	public function setPageNo($pageNo) {
-		$this->pageNo = $pageNo;
-		$this->queryParameters["PageNo"]=$pageNo;
-	}
+        return $this;
+    }
 
-	public function getSearchType() {
-		return $this->searchType;
-	}
+    /**
+     * @param string $searchType
+     *
+     * @return $this
+     */
+    public function setSearchType($searchType)
+    {
+        $this->requestParameters['SearchType'] = $searchType;
+        $this->queryParameters['SearchType'] = $searchType;
 
-	public function setSearchType($searchType) {
-		$this->searchType = $searchType;
-		$this->queryParameters["SearchType"]=$searchType;
-	}
+        return $this;
+    }
 
-	public function getMatch() {
-		return $this->match;
-	}
+    /**
+     * @param string $pageSize
+     *
+     * @return $this
+     */
+    public function setPageSize($pageSize)
+    {
+        $this->requestParameters['PageSize'] = $pageSize;
+        $this->queryParameters['PageSize'] = $pageSize;
 
-	public function setMatch($match) {
-		$this->match = $match;
-		$this->queryParameters["Match"]=$match;
-	}
+        return $this;
+    }
 
-	public function getPageSize() {
-		return $this->pageSize;
-	}
+    /**
+     * @param string $sortBy
+     *
+     * @return $this
+     */
+    public function setSortBy($sortBy)
+    {
+        $this->requestParameters['SortBy'] = $sortBy;
+        $this->queryParameters['SortBy'] = $sortBy;
 
-	public function setPageSize($pageSize) {
-		$this->pageSize = $pageSize;
-		$this->queryParameters["PageSize"]=$pageSize;
-	}
+        return $this;
+    }
 
-	public function getSortBy() {
-		return $this->sortBy;
-	}
+    /**
+     * @param string $resultTypes
+     *
+     * @return $this
+     */
+    public function setResultTypes($resultTypes)
+    {
+        $this->requestParameters['ResultTypes'] = $resultTypes;
+        $this->queryParameters['ResultTypes'] = $resultTypes;
 
-	public function setSortBy($sortBy) {
-		$this->sortBy = $sortBy;
-		$this->queryParameters["SortBy"]=$sortBy;
-	}
+        return $this;
+    }
 
-	public function getOwnerId() {
-		return $this->ownerId;
-	}
+    /**
+     * @param string $fields
+     *
+     * @return $this
+     */
+    public function setFields($fields)
+    {
+        $this->requestParameters['Fields'] = $fields;
+        $this->queryParameters['Fields'] = $fields;
 
-	public function setOwnerId($ownerId) {
-		$this->ownerId = $ownerId;
-		$this->queryParameters["OwnerId"]=$ownerId;
-	}
-
-	public function getFields() {
-		return $this->fields;
-	}
-
-	public function setFields($fields) {
-		$this->fields = $fields;
-		$this->queryParameters["Fields"]=$fields;
-	}
-
-	public function getScrollToken() {
-		return $this->scrollToken;
-	}
-
-	public function setScrollToken($scrollToken) {
-		$this->scrollToken = $scrollToken;
-		$this->queryParameters["ScrollToken"]=$scrollToken;
-	}
-	
+        return $this;
+    }
 }

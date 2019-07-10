@@ -21,6 +21,10 @@ namespace JimChen\AliyunVod;
 
 use JimChen\AliyunCore\RpcAcsRequest;
 
+/**
+ * @deprecated
+ * @see SubmitAIMediaAuditJobRequest
+ */
 class SubmitAIASRJobRequest extends RpcAcsRequest
 {
 	function  __construct()

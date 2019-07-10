@@ -21,6 +21,9 @@ namespace JimChen\AliyunVod;
 
 use JimChen\AliyunCore\RpcAcsRequest;
 
+/**
+ * @see DescribeVodDomainBpsDataRequest
+ */
 class DescribeDomainBpsDataRequest extends RpcAcsRequest
 {
 	function  __construct()

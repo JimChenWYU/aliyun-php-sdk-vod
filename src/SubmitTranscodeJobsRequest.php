@@ -1,109 +1,173 @@
 <?php
-/*
- * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements.  See the NOTICE file
- * distributed with this work for additional information
- * regarding copyright ownership.  The ASF licenses this file
- * to you under the Apache License, Version 2.0 (the
- * "License"); you may not use this file except in compliance
- * with the License.  You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing,
- * software distributed under the License is distributed on an
- * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
- * KIND, either express or implied.  See the License for the
- * specific language governing permissions and limitations
- * under the License.
- */
+
 namespace JimChen\AliyunVod;
 
 use JimChen\AliyunCore\RpcAcsRequest;
 
+/**
+ * @deprecated Please use https://github.com/aliyun/openapi-sdk-php
+ *
+ * Request of SubmitTranscodeJobs
+ *
+ * @method string getUserData()
+ * @method string getResourceOwnerId()
+ * @method string getTemplateGroupId()
+ * @method string getResourceOwnerAccount()
+ * @method string getVideoId()
+ * @method string getOverrideParams()
+ * @method string getOwnerId()
+ * @method string getPriority()
+ * @method string getEncryptConfig()
+ * @method string getPipelineId()
+ */
 class SubmitTranscodeJobsRequest extends RpcAcsRequest
 {
-	function  __construct()
-	{
-		parent::__construct("vod", "2017-03-21", "SubmitTranscodeJobs", "vod", "openAPI");
-		$this->setMethod("POST");
-	}
 
-	private  $resourceOwnerId;
+    /**
+     * @var string
+     */
+    protected $method = 'POST';
 
-	private  $templateGroupId;
+    /**
+     * Class constructor.
+     */
+    public function __construct()
+    {
+        parent::__construct(
+            'vod',
+            '2017-03-21',
+            'SubmitTranscodeJobs',
+            'vod'
+        );
+    }
 
-	private  $resourceOwnerAccount;
+    /**
+     * @param string $userData
+     *
+     * @return $this
+     */
+    public function setUserData($userData)
+    {
+        $this->requestParameters['UserData'] = $userData;
+        $this->queryParameters['UserData'] = $userData;
 
-	private  $videoId;
+        return $this;
+    }
 
-	private  $ownerId;
+    /**
+     * @param string $resourceOwnerId
+     *
+     * @return $this
+     */
+    public function setResourceOwnerId($resourceOwnerId)
+    {
+        $this->requestParameters['ResourceOwnerId'] = $resourceOwnerId;
+        $this->queryParameters['ResourceOwnerId'] = $resourceOwnerId;
 
-	private  $encryptConfig;
+        return $this;
+    }
 
-	private  $pipelineId;
+    /**
+     * @param string $templateGroupId
+     *
+     * @return $this
+     */
+    public function setTemplateGroupId($templateGroupId)
+    {
+        $this->requestParameters['TemplateGroupId'] = $templateGroupId;
+        $this->queryParameters['TemplateGroupId'] = $templateGroupId;
 
-	public function getResourceOwnerId() {
-		return $this->resourceOwnerId;
-	}
+        return $this;
+    }
 
-	public function setResourceOwnerId($resourceOwnerId) {
-		$this->resourceOwnerId = $resourceOwnerId;
-		$this->queryParameters["ResourceOwnerId"]=$resourceOwnerId;
-	}
+    /**
+     * @param string $resourceOwnerAccount
+     *
+     * @return $this
+     */
+    public function setResourceOwnerAccount($resourceOwnerAccount)
+    {
+        $this->requestParameters['ResourceOwnerAccount'] = $resourceOwnerAccount;
+        $this->queryParameters['ResourceOwnerAccount'] = $resourceOwnerAccount;
 
-	public function getTemplateGroupId() {
-		return $this->templateGroupId;
-	}
+        return $this;
+    }
 
-	public function setTemplateGroupId($templateGroupId) {
-		$this->templateGroupId = $templateGroupId;
-		$this->queryParameters["TemplateGroupId"]=$templateGroupId;
-	}
+    /**
+     * @param string $videoId
+     *
+     * @return $this
+     */
+    public function setVideoId($videoId)
+    {
+        $this->requestParameters['VideoId'] = $videoId;
+        $this->queryParameters['VideoId'] = $videoId;
 
-	public function getResourceOwnerAccount() {
-		return $this->resourceOwnerAccount;
-	}
+        return $this;
+    }
 
-	public function setResourceOwnerAccount($resourceOwnerAccount) {
-		$this->resourceOwnerAccount = $resourceOwnerAccount;
-		$this->queryParameters["ResourceOwnerAccount"]=$resourceOwnerAccount;
-	}
+    /**
+     * @param string $overrideParams
+     *
+     * @return $this
+     */
+    public function setOverrideParams($overrideParams)
+    {
+        $this->requestParameters['OverrideParams'] = $overrideParams;
+        $this->queryParameters['OverrideParams'] = $overrideParams;
 
-	public function getVideoId() {
-		return $this->videoId;
-	}
+        return $this;
+    }
 
-	public function setVideoId($videoId) {
-		$this->videoId = $videoId;
-		$this->queryParameters["VideoId"]=$videoId;
-	}
+    /**
+     * @param string $ownerId
+     *
+     * @return $this
+     */
+    public function setOwnerId($ownerId)
+    {
+        $this->requestParameters['OwnerId'] = $ownerId;
+        $this->queryParameters['OwnerId'] = $ownerId;
 
-	public function getOwnerId() {
-		return $this->ownerId;
-	}
+        return $this;
+    }
 
-	public function setOwnerId($ownerId) {
-		$this->ownerId = $ownerId;
-		$this->queryParameters["OwnerId"]=$ownerId;
-	}
+    /**
+     * @param string $priority
+     *
+     * @return $this
+     */
+    public function setPriority($priority)
+    {
+        $this->requestParameters['Priority'] = $priority;
+        $this->queryParameters['Priority'] = $priority;
 
-	public function getEncryptConfig() {
-		return $this->encryptConfig;
-	}
+        return $this;
+    }
 
-	public function setEncryptConfig($encryptConfig) {
-		$this->encryptConfig = $encryptConfig;
-		$this->queryParameters["EncryptConfig"]=$encryptConfig;
-	}
+    /**
+     * @param string $encryptConfig
+     *
+     * @return $this
+     */
+    public function setEncryptConfig($encryptConfig)
+    {
+        $this->requestParameters['EncryptConfig'] = $encryptConfig;
+        $this->queryParameters['EncryptConfig'] = $encryptConfig;
 
-	public function getPipelineId() {
-		return $this->pipelineId;
-	}
+        return $this;
+    }
 
-	public function setPipelineId($pipelineId) {
-		$this->pipelineId = $pipelineId;
-		$this->queryParameters["PipelineId"]=$pipelineId;
-	}
-	
+    /**
+     * @param string $pipelineId
+     *
+     * @return $this
+     */
+    public function setPipelineId($pipelineId)
+    {
+        $this->requestParameters['PipelineId'] = $pipelineId;
+        $this->queryParameters['PipelineId'] = $pipelineId;
+
+        return $this;
+    }
 }

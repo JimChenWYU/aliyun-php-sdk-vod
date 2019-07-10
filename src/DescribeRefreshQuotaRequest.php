@@ -21,6 +21,9 @@ namespace JimChen\AliyunVod;
 
 use JimChen\AliyunCore\RpcAcsRequest;
 
+/**
+ * @see DescribeVodRefreshQuotaRequest
+ */
 class DescribeRefreshQuotaRequest extends RpcAcsRequest
 {
 	function  __construct()

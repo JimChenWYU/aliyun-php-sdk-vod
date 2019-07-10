@@ -21,6 +21,9 @@ namespace JimChen\AliyunVod;
 
 use JimChen\AliyunCore\RpcAcsRequest;
 
+/**
+ * @deprecated
+ */
 class OpenVodServiceRequest extends RpcAcsRequest
 {
 	function  __construct()

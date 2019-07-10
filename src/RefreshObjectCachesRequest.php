@@ -21,6 +21,9 @@ namespace JimChen\AliyunVod;
 
 use JimChen\AliyunCore\RpcAcsRequest;
 
+/**
+ * @see RefreshVodObjectCachesRequest
+ */
 class RefreshObjectCachesRequest extends RpcAcsRequest
 {
 	function  __construct()

@@ -21,6 +21,9 @@ namespace JimChen\AliyunVod;
 
 use JimChen\AliyunCore\RpcAcsRequest;
 
+/**
+ * @deprecated
+ */
 class GetVideoPlayInfoRequest extends RpcAcsRequest
 {
 	function  __construct()

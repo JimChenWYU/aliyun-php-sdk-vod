@@ -1,142 +1,201 @@
 <?php
-/*
- * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements.  See the NOTICE file
- * distributed with this work for additional information
- * regarding copyright ownership.  The ASF licenses this file
- * to you under the Apache License, Version 2.0 (the
- * "License"); you may not use this file except in compliance
- * with the License.  You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing,
- * software distributed under the License is distributed on an
- * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
- * KIND, either express or implied.  See the License for the
- * specific language governing permissions and limitations
- * under the License.
- */
+
 namespace JimChen\AliyunVod;
 
 use JimChen\AliyunCore\RpcAcsRequest;
 
+/**
+ * @deprecated Please use https://github.com/aliyun/openapi-sdk-php
+ *
+ * Request of SubmitSnapshotJob
+ *
+ * @method string getResourceOwnerId()
+ * @method string getResourceOwnerAccount()
+ * @method string getCount()
+ * @method string getVideoId()
+ * @method string getOwnerId()
+ * @method string getUserData()
+ * @method string getSpecifiedOffsetTime()
+ * @method string getWidth()
+ * @method string getInterval()
+ * @method string getSpriteSnapshotConfig()
+ * @method string getSnapshotTemplateId()
+ * @method string getHeight()
+ */
 class SubmitSnapshotJobRequest extends RpcAcsRequest
 {
-	function  __construct()
-	{
-		parent::__construct("vod", "2017-03-21", "SubmitSnapshotJob", "vod", "openAPI");
-		$this->setMethod("POST");
-	}
 
-	private  $resourceOwnerId;
+    /**
+     * @var string
+     */
+    protected $method = 'POST';
 
-	private  $specifiedOffsetTime;
+    /**
+     * Class constructor.
+     */
+    public function __construct()
+    {
+        parent::__construct(
+            'vod',
+            '2017-03-21',
+            'SubmitSnapshotJob',
+            'vod'
+        );
+    }
 
-	private  $resourceOwnerAccount;
+    /**
+     * @param string $resourceOwnerId
+     *
+     * @return $this
+     */
+    public function setResourceOwnerId($resourceOwnerId)
+    {
+        $this->requestParameters['ResourceOwnerId'] = $resourceOwnerId;
+        $this->queryParameters['ResourceOwnerId'] = $resourceOwnerId;
 
-	private  $width;
+        return $this;
+    }
 
-	private  $count;
+    /**
+     * @param string $resourceOwnerAccount
+     *
+     * @return $this
+     */
+    public function setResourceOwnerAccount($resourceOwnerAccount)
+    {
+        $this->requestParameters['ResourceOwnerAccount'] = $resourceOwnerAccount;
+        $this->queryParameters['ResourceOwnerAccount'] = $resourceOwnerAccount;
 
-	private  $videoId;
+        return $this;
+    }
 
-	private  $interval;
+    /**
+     * @param string $count
+     *
+     * @return $this
+     */
+    public function setCount($count)
+    {
+        $this->requestParameters['Count'] = $count;
+        $this->queryParameters['Count'] = $count;
 
-	private  $ownerId;
+        return $this;
+    }
 
-	private  $spriteSnapshotConfig;
+    /**
+     * @param string $videoId
+     *
+     * @return $this
+     */
+    public function setVideoId($videoId)
+    {
+        $this->requestParameters['VideoId'] = $videoId;
+        $this->queryParameters['VideoId'] = $videoId;
 
-	private  $height;
+        return $this;
+    }
 
-	public function getResourceOwnerId() {
-		return $this->resourceOwnerId;
-	}
+    /**
+     * @param string $ownerId
+     *
+     * @return $this
+     */
+    public function setOwnerId($ownerId)
+    {
+        $this->requestParameters['OwnerId'] = $ownerId;
+        $this->queryParameters['OwnerId'] = $ownerId;
 
-	public function setResourceOwnerId($resourceOwnerId) {
-		$this->resourceOwnerId = $resourceOwnerId;
-		$this->queryParameters["ResourceOwnerId"]=$resourceOwnerId;
-	}
+        return $this;
+    }
 
-	public function getSpecifiedOffsetTime() {
-		return $this->specifiedOffsetTime;
-	}
+    /**
+     * @param string $userData
+     *
+     * @return $this
+     */
+    public function setUserData($userData)
+    {
+        $this->requestParameters['UserData'] = $userData;
+        $this->queryParameters['UserData'] = $userData;
 
-	public function setSpecifiedOffsetTime($specifiedOffsetTime) {
-		$this->specifiedOffsetTime = $specifiedOffsetTime;
-		$this->queryParameters["SpecifiedOffsetTime"]=$specifiedOffsetTime;
-	}
+        return $this;
+    }
 
-	public function getResourceOwnerAccount() {
-		return $this->resourceOwnerAccount;
-	}
+    /**
+     * @param string $specifiedOffsetTime
+     *
+     * @return $this
+     */
+    public function setSpecifiedOffsetTime($specifiedOffsetTime)
+    {
+        $this->requestParameters['SpecifiedOffsetTime'] = $specifiedOffsetTime;
+        $this->queryParameters['SpecifiedOffsetTime'] = $specifiedOffsetTime;
 
-	public function setResourceOwnerAccount($resourceOwnerAccount) {
-		$this->resourceOwnerAccount = $resourceOwnerAccount;
-		$this->queryParameters["ResourceOwnerAccount"]=$resourceOwnerAccount;
-	}
+        return $this;
+    }
 
-	public function getWidth() {
-		return $this->width;
-	}
+    /**
+     * @param string $width
+     *
+     * @return $this
+     */
+    public function setWidth($width)
+    {
+        $this->requestParameters['Width'] = $width;
+        $this->queryParameters['Width'] = $width;
 
-	public function setWidth($width) {
-		$this->width = $width;
-		$this->queryParameters["Width"]=$width;
-	}
+        return $this;
+    }
 
-	public function getCount() {
-		return $this->count;
-	}
+    /**
+     * @param string $interval
+     *
+     * @return $this
+     */
+    public function setInterval($interval)
+    {
+        $this->requestParameters['Interval'] = $interval;
+        $this->queryParameters['Interval'] = $interval;
 
-	public function setCount($count) {
-		$this->count = $count;
-		$this->queryParameters["Count"]=$count;
-	}
+        return $this;
+    }
 
-	public function getVideoId() {
-		return $this->videoId;
-	}
+    /**
+     * @param string $spriteSnapshotConfig
+     *
+     * @return $this
+     */
+    public function setSpriteSnapshotConfig($spriteSnapshotConfig)
+    {
+        $this->requestParameters['SpriteSnapshotConfig'] = $spriteSnapshotConfig;
+        $this->queryParameters['SpriteSnapshotConfig'] = $spriteSnapshotConfig;
 
-	public function setVideoId($videoId) {
-		$this->videoId = $videoId;
-		$this->queryParameters["VideoId"]=$videoId;
-	}
+        return $this;
+    }
 
-	public function getInterval() {
-		return $this->interval;
-	}
+    /**
+     * @param string $snapshotTemplateId
+     *
+     * @return $this
+     */
+    public function setSnapshotTemplateId($snapshotTemplateId)
+    {
+        $this->requestParameters['SnapshotTemplateId'] = $snapshotTemplateId;
+        $this->queryParameters['SnapshotTemplateId'] = $snapshotTemplateId;
 
-	public function setInterval($interval) {
-		$this->interval = $interval;
-		$this->queryParameters["Interval"]=$interval;
-	}
+        return $this;
+    }
 
-	public function getOwnerId() {
-		return $this->ownerId;
-	}
+    /**
+     * @param string $height
+     *
+     * @return $this
+     */
+    public function setHeight($height)
+    {
+        $this->requestParameters['Height'] = $height;
+        $this->queryParameters['Height'] = $height;
 
-	public function setOwnerId($ownerId) {
-		$this->ownerId = $ownerId;
-		$this->queryParameters["OwnerId"]=$ownerId;
-	}
-
-	public function getSpriteSnapshotConfig() {
-		return $this->spriteSnapshotConfig;
-	}
-
-	public function setSpriteSnapshotConfig($spriteSnapshotConfig) {
-		$this->spriteSnapshotConfig = $spriteSnapshotConfig;
-		$this->queryParameters["SpriteSnapshotConfig"]=$spriteSnapshotConfig;
-	}
-
-	public function getHeight() {
-		return $this->height;
-	}
-
-	public function setHeight($height) {
-		$this->height = $height;
-		$this->queryParameters["Height"]=$height;
-	}
-	
+        return $this;
+    }
 }

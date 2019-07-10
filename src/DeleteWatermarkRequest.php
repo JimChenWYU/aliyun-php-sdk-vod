@@ -14,7 +14,7 @@ use JimChen\AliyunCore\RpcAcsRequest;
  * @method string getResourceOwnerAccount()
  * @method string getOwnerId()
  */
-class DeleteWatermarkRequest extends \RpcAcsRequest
+class DeleteWatermarkRequest extends RpcAcsRequest
 {
 
     /**

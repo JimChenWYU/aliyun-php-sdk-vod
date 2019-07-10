@@ -26,7 +26,7 @@ use JimChen\AliyunCore\RpcAcsRequest;
  * @method string getCateId()
  * @method string getAppId()
  */
-class CreateUploadAttachedMediaRequest extends \RpcAcsRequest
+class CreateUploadAttachedMediaRequest extends RpcAcsRequest
 {
 
     /**

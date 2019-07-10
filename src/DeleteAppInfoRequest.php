@@ -15,7 +15,7 @@ use JimChen\AliyunCore\RpcAcsRequest;
  * @method string getResourceRealOwnerId()
  * @method string getOwnerId()
  */
-class DeleteAppInfoRequest extends \RpcAcsRequest
+class DeleteAppInfoRequest extends RpcAcsRequest
 {
 
     /**

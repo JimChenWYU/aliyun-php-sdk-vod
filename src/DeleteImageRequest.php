@@ -18,7 +18,7 @@ use JimChen\AliyunCore\RpcAcsRequest;
  * @method string getDeleteImageType()
  * @method string getImageIds()
  */
-class DeleteImageRequest extends \RpcAcsRequest
+class DeleteImageRequest extends RpcAcsRequest
 {
 
     /**

@@ -14,7 +14,7 @@ use JimChen\AliyunCore\RpcAcsRequest;
  * @method string getVideoId()
  * @method string getSortBy()
  */
-class GetAuditHistoryRequest extends \RpcAcsRequest
+class GetAuditHistoryRequest extends RpcAcsRequest
 {
 
     /**

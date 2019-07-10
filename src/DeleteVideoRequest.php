@@ -14,7 +14,7 @@ use JimChen\AliyunCore\RpcAcsRequest;
  * @method string getOwnerId()
  * @method string getVideoIds()
  */
-class DeleteVideoRequest extends \RpcAcsRequest
+class DeleteVideoRequest extends RpcAcsRequest
 {
 
     /**

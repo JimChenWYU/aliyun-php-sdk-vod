@@ -14,7 +14,7 @@ use JimChen\AliyunCore\RpcAcsRequest;
  * @method string getOwnerId()
  * @method string getTemplateId()
  */
-class DeleteAITemplateRequest extends \RpcAcsRequest
+class DeleteAITemplateRequest extends RpcAcsRequest
 {
 
     /**

@@ -16,7 +16,7 @@ use JimChen\AliyunCore\RpcAcsRequest;
  * @method string getOwnerId()
  * @method string getAuthTimeout()
  */
-class GetImageInfoRequest extends \RpcAcsRequest
+class GetImageInfoRequest extends RpcAcsRequest
 {
 
     /**

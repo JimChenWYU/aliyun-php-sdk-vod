@@ -18,7 +18,7 @@ use JimChen\AliyunCore\RpcAcsRequest;
  * @method string getOwnerId()
  * @method string getType()
  */
-class GetCategoriesRequest extends \RpcAcsRequest
+class GetCategoriesRequest extends RpcAcsRequest
 {
 
     /**

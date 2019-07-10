@@ -16,7 +16,7 @@ use JimChen\AliyunCore\RpcAcsRequest;
  * @method string getTranscodeTemplateGroupId()
  * @method string getForceDelGroup()
  */
-class DeleteTranscodeTemplateGroupRequest extends \RpcAcsRequest
+class DeleteTranscodeTemplateGroupRequest extends RpcAcsRequest
 {
 
     /**

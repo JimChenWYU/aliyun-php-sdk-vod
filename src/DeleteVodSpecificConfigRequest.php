@@ -14,7 +14,7 @@ use JimChen\AliyunCore\RpcAcsRequest;
  * @method string getDomainName()
  * @method string getOwnerId()
  */
-class DeleteVodSpecificConfigRequest extends \RpcAcsRequest
+class DeleteVodSpecificConfigRequest extends RpcAcsRequest
 {
 
     /**

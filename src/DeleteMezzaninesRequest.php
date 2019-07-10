@@ -15,7 +15,7 @@ use JimChen\AliyunCore\RpcAcsRequest;
  * @method string getOwnerId()
  * @method string getVideoIds()
  */
-class DeleteMezzaninesRequest extends \RpcAcsRequest
+class DeleteMezzaninesRequest extends RpcAcsRequest
 {
 
     /**

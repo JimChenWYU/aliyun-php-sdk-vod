@@ -16,7 +16,7 @@ use JimChen\AliyunCore\RpcAcsRequest;
  * @method string getResourceRealOwnerId()
  * @method string getOwnerId()
  */
-class DeleteMessageCallbackRequest extends \RpcAcsRequest
+class DeleteMessageCallbackRequest extends RpcAcsRequest
 {
 
     /**

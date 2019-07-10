@@ -15,7 +15,7 @@ use JimChen\AliyunCore\RpcAcsRequest;
  * @method string getOwnerId()
  * @method string getProjectId()
  */
-class GetEditingProjectRequest extends \RpcAcsRequest
+class GetEditingProjectRequest extends RpcAcsRequest
 {
 
     /**

@@ -14,7 +14,7 @@ use JimChen\AliyunCore\RpcAcsRequest;
  * @method string getVodTemplateId()
  * @method string getOwnerId()
  */
-class DeleteVodTemplateRequest extends \RpcAcsRequest
+class DeleteVodTemplateRequest extends RpcAcsRequest
 {
 
     /**

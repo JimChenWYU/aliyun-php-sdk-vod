@@ -14,7 +14,7 @@ use JimChen\AliyunCore\RpcAcsRequest;
  * @method string getBizDate()
  * @method string getPageNo()
  */
-class DescribePlayTopVideosRequest extends \RpcAcsRequest
+class DescribePlayTopVideosRequest extends RpcAcsRequest
 {
 
     /**

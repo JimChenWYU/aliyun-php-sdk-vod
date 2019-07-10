@@ -28,7 +28,7 @@ use JimChen\AliyunCore\RpcAcsRequest;
  * @method string getWorkflowId()
  * @method string getCustomMediaInfo()
  */
-class CreateUploadVideoRequest extends \RpcAcsRequest
+class CreateUploadVideoRequest extends RpcAcsRequest
 {
 
     /**

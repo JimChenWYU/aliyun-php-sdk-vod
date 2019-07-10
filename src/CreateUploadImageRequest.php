@@ -23,7 +23,7 @@ use JimChen\AliyunCore\RpcAcsRequest;
  * @method string getCateId()
  * @method string getAppId()
  */
-class CreateUploadImageRequest extends \RpcAcsRequest
+class CreateUploadImageRequest extends RpcAcsRequest
 {
 
     /**

@@ -17,7 +17,7 @@ use JimChen\AliyunCore\RpcAcsRequest;
  * @method string getMediaId()
  * @method string getMediaType()
  */
-class DeleteMultipartUploadRequest extends \RpcAcsRequest
+class DeleteMultipartUploadRequest extends RpcAcsRequest
 {
 
     /**

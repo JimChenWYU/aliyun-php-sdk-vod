@@ -11,7 +11,7 @@ use JimChen\AliyunCore\RpcAcsRequest;
  *
  * @method string getAuditContent()
  */
-class CreateAuditRequest extends \RpcAcsRequest
+class CreateAuditRequest extends RpcAcsRequest
 {
 
     /**

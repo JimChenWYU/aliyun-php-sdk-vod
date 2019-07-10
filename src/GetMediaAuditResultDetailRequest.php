@@ -15,7 +15,7 @@ use JimChen\AliyunCore\RpcAcsRequest;
  * @method string getOwnerId()
  * @method string getMediaId()
  */
-class GetMediaAuditResultDetailRequest extends \RpcAcsRequest
+class GetMediaAuditResultDetailRequest extends RpcAcsRequest
 {
 
     /**

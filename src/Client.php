@@ -34,7 +34,6 @@ class Client
         $accessKeySecret,
         $regionId,
         $clientName,
-        $securityToken = '',
         $debug = false,
         $connectionTimeout = 20,
         $timeout = 20,
@@ -42,7 +41,7 @@ class Client
         $options = []
     )
     {
-        $this->kernel = AlibabaCloud::stsClient($accessKeyId, $accessKeySecret, $securityToken)
+        $this->kernel = AlibabaCloud::accessKeyClient($accessKeyId, $accessKeySecret)
             ->regionId($regionId)
             ->connectTimeout($connectionTimeout)
             ->timeout($timeout)

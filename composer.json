@@ -10,12 +10,22 @@
         }
     ],
     "require": {
-        "php": ">=5.3",
-        "jimchen/aliyun-php-sdk-core": "~1.1"
+        "php": ">=5.5",
+        "alibabacloud/vod": "^1.8"
     },
     "autoload": {
         "psr-4": {
             "JimChen\\AliyunVod\\": "src/"
+        }
+    },
+    "require-dev": {
+        "laravel/framework": "^6.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JimChen\\AliyunVod\\LaravelProvider"
+            ]
         }
     }
 }
